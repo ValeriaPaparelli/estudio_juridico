@@ -6,6 +6,47 @@
 
 /* HEADER */
 
+.header-sup-container {
+    background-color: #403B36;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.fa-phone {
+    color: #d9c8b4;
+    margin-right: 10px;
+}
+
+.telefono {
+    color: whitesmoke;
+    margin-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+
+.fa-envelope {
+    color: #d9c8b4;
+    margin-right: 10px;
+}
+
+.email {
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.email :hover {
+    color: #d9c8b4;
+}
+
+.email a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .headerContainer{
     background-color: white;
     display: flex;
@@ -67,9 +108,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 98%;
+    width: 100%;
     height: 425px;
-    background-image: url(../img/imgPrincipal-2.jpg);
+    background-image: url(../img/imgPrincipal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.; 
@@ -77,7 +118,7 @@
 }
 
 .portadaTitulo {
-    color: #f2f2f2;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
     font-weight: bold;
@@ -85,7 +126,7 @@
 }
 
 .portadaParrafo {
-    color: #f2f2f2;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -98,7 +139,7 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
-    color: #730220;
+    color: #403B36;
     margin: 40px;
 }
 
@@ -110,8 +151,21 @@
 
 /*DEPARTAMENTOS*/
 
+.seccionDep {
+    width: 22%;
+    cursor: pointer;
+    margin: 10px;
+    padding-bottom: 40px;
+}
+
+.seccionDep:hover {
+    background-color: #f2f2f2;
+}
+
 .seccionImg {
-    margin-top: 30px;
+    width: fit-content;
+    margin: 30px auto;
+    display: block;
 }
 
 .seccionTitulo {
@@ -132,7 +186,7 @@
     border: none;
     padding: 10px 15px;
     text-decoration: none;
-    margin: 20px auto;
+    margin: 50px auto;
     width: fit-content;
 }
 
@@ -143,24 +197,126 @@
 /* FOOTER */
 
 footer {
-    background-color: #f5f2ef;
-    margin-top: 50px;
+    /* #f5f2ef */
+    background-color: #403B36; 
+    margin-top: 70px;
     height: 150px;
     padding-top: 40px;
     padding-bottom: 10px;
 }
 
 .linkFooter {
+    display: block;
     text-decoration: none;
     color: #403B36;
-    padding: 15px;
-    border-radius: 20px;
-    background-color: #d9c8b4;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #e8ddd1;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.linkFooter:hover {
+    background-color: #d9c8b4;
 }
 
 .parrafoFooter {
     text-align: center;
-    margin: 50px 0 10px 0;
+    margin-top: 30px;
+    color: white;
 }
+
+/****** NOSOTROS **************/ 
+
+.imgGeneral {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.titulosPrincipales {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #730220;
+    margin-left: 70px;
+    margin-top: 50px;
+    font-weight: normal;
+}
+
+.parrafoNosotros {
+    line-height: 27px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 20px;
+    color: #403B36;
+}
+
+/********** NOVEDADES *******/
+
+.parrafoNovedades{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 20px;
+    color: #403B36;
+}
+
+/******FORMULARIO *********/
+
+.imgContacto {
+    width: 1200px;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contactotitulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #730220;
+    font-weight: normal;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.formGrupo {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+} 
+.grupoLabel {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-weight: bold;  
+    font-family: 'Poppins', sans-serif;
+}
+
+.grupoInput {
+    border: 1px solid #403B36;
+    padding: 10px 10px;
+}
+
+.botonEnviar {
+    padding: 10px 0;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    background-color: #d9c8b4;
+    color: #403B36;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: none;
+}
+.botonEnviar:hover {
+    background-color: #e8ddd1;;
+}    
+
