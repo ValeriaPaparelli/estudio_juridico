@@ -97,6 +97,10 @@
     color: #730220;
 }
 
+.fa-align-justify {
+    display: none;
+}
+
 /* MAIN */
 
 .indexPrincipal {
@@ -113,7 +117,6 @@
     background-image: url(../img/imgPrincipal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.; 
     padding: 40px;
 }
 
@@ -133,8 +136,7 @@
     text-shadow: 2px 2px 6px #1d1b1c;
 }
 
-/* SECCIÓN DEPARTAMENTOS */
-/* Utilización de grids */
+/*DEPARTAMENTOS INDEX*/
 
 .seccionTituloPrincipal {
     text-align: center;
@@ -149,8 +151,6 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
-/*DEPARTAMENTOS INDEX*/
 
 .seccionDep {
     width: 22%;
@@ -353,6 +353,53 @@ footer {
     color: white;
 }
 
-/* MEDIA QUERIES */
+/* ESTILOS RESPONSIVE */
 
 /* HEADER */
+
+@media (max-width : 480px){
+    .header-sup-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logoSubtitulo {
+        margin-bottom: 25px;
+    }
+
+    .indexPortada {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+    .fa-align-justify {
+        display: block;
+        font-size: 40px;
+        margin-top: 40px;
+    }
+   /*  .seccionContenedor{
+        display: flex;
+        justify-content: space-evenly;
+    } */
+    .seccionContenedor{
+        display: grid;
+        grid-template-areas: 
+        "img-depto img-depto"
+        "titulo-depto titulo-depto";
+    }
+    .seccionImg {
+        grid-area: img-depto;
+        margin-left: 70px;
+    }
+    .seccionTitulo {
+        grid-area: titulo-depto;
+        margin-left: 70px;
+    }
+}
