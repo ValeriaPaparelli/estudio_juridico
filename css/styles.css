@@ -134,12 +134,13 @@
 }
 
 /* SECCIÓN DEPARTAMENTOS */
+/* Utilización de grids */
 
 .seccionTituloPrincipal {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
-    color: #403B36;
+    color: #730220;
     margin: 40px;
 }
 
@@ -149,13 +150,15 @@
     flex-wrap: wrap;
 }
 
-/*DEPARTAMENTOS*/
+/*DEPARTAMENTOS INDEX*/
 
 .seccionDep {
     width: 22%;
     cursor: pointer;
     margin: 10px;
     padding-bottom: 40px;
+    text-decoration: none;
+    color: #403B36;
 }
 
 .seccionDep:hover {
@@ -172,60 +175,7 @@
     margin-top: 20px;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    color: #403B36;
     text-align: center;
-}
-
-.seccionLink {
-    display: block;
-    text-align: center;
-    background-color: #d9c8b4;
-    color: #403B36;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    border: none;
-    padding: 10px 15px;
-    text-decoration: none;
-    margin: 50px auto;
-    width: fit-content;
-}
-
-.seccionLink:hover {
-    background-color: #e8ddd1;
-}
-
-/* FOOTER */
-
-footer {
-    /* #f5f2ef */
-    background-color: #403B36; 
-    margin-top: 70px;
-    height: 150px;
-    padding-top: 40px;
-    padding-bottom: 10px;
-}
-
-.linkFooter {
-    display: block;
-    text-decoration: none;
-    color: #403B36;
-    padding: 10px;
-    border-radius: 6px;
-    background-color: #e8ddd1;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    width: fit-content;
-    margin: 0 auto;
-}
-
-.linkFooter:hover {
-    background-color: #d9c8b4;
-}
-
-.parrafoFooter {
-    text-align: center;
-    margin-top: 30px;
-    color: white;
 }
 
 /****** NOSOTROS **************/ 
@@ -246,6 +196,7 @@ footer {
 }
 
 .parrafoNosotros {
+    font-family: 'Poppins', sans-serif;
     line-height: 27px;
     margin-top: 25px;
     margin-bottom: 50px;
@@ -253,6 +204,57 @@ footer {
     margin-right: 70px;
     font-size: 20px;
     color: #403B36;
+}
+
+/***** DEPARTAMENTOS *******/
+
+.deptos {
+    width: 75%;
+    margin: 40px auto;
+}
+
+.depto {
+    display: grid;
+    grid-template-areas:
+    "depto-img depto-descripcion";
+}
+
+.deptoImg {
+    grid-area: depto-img;
+    margin-top: 45px;
+    margin-right: 20px;
+}
+
+.deptoDescripcion {
+    display: flex;
+    flex-direction: column;
+    grid-area: depto-descripcion;
+}
+
+.deptoTitulo {
+    border-bottom: 1px solid grey;
+    font-weight: normal;
+    color: #730220;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.deptoParrafo {
+    color: #403B36;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.deptoParrafoNombre {
+    border-bottom: 1px solid grey;
+    color: #403B36;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
 }
 
 /********** NOVEDADES *******/
@@ -264,13 +266,10 @@ footer {
     margin-right: 70px;
     font-size: 20px;
     color: #403B36;
+    font-family: 'Poppins', sans-serif;
 }
 
 /******FORMULARIO *********/
-
-.imgContacto {
-    width: 1200px;
-}
 
 .contacto {
     display: flex;
@@ -320,3 +319,40 @@ footer {
     background-color: #e8ddd1;;
 }    
 
+/* FOOTER */
+
+footer {
+    /* #f5f2ef */
+    background-color: #403B36; 
+    margin-top: 70px;
+    height: 150px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.linkFooter {
+    display: block;
+    text-decoration: none;
+    color: #403B36;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #e8ddd1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.linkFooter:hover {
+    background-color: #d9c8b4;
+}
+
+.parrafoFooter {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+/* MEDIA QUERIES */
+
+/* HEADER */
