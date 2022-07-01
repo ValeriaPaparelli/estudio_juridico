@@ -409,6 +409,7 @@ footer {
     text-align: center;
     margin-top: 30px;
     color: white;
+    font-size: 14px;
 }
 
 /* EEROR 404 */
@@ -499,6 +500,15 @@ footer {
         grid-area: img-depto;
         margin-left: 70px;
     }
+    .seccionDepto {
+        width: 50%;
+        cursor: pointer;
+        margin: none;
+        padding-bottom: none;
+        text-decoration: none;
+        color: #403B36;
+    }
+
     .seccionTitulo {
         grid-area: titulo-depto;
         margin-left: 70px;
@@ -509,16 +519,62 @@ footer {
 
 @media only screen and (max-width: 768px) and (min-width: 400px) {
     .imgGeneral {
-        width: 400px;
+        width: 100%;
     }
     .titulosPrincipales {
         font-size: 30px;
     }
 }
 
-/* CONTACTO */
+/* DEPARTAMENTOS */
 
 @media only screen and (max-width: 768px) and (min-width: 400px) {
+    .deptos {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* NOVEDADES */
+
+@media only screen and (max-width: 768px) and (min-width: 400px){
+
+    header {
+        width: 100%;
+    }
+    
+    .novedades{
+        grid-template-areas:
+        "novedades-imagen"
+        "novedades-descripcion";
+    }    
+
+    .Novedadestitulo{
+        padding: 15px 0;
+    }
+
+    .novedadesParrafo{
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+
+    .novedadesLink{
+        width: 100px;
+    }
+
+    .novedadesImgContainer {
+        text-align: center;
+    }
+    
+    .novedadesImg {
+        width: 250px;
+        margin: 0 auto;
+    }
+}
+
+/* CONTACTO */
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {  
     .contactotitulo {
         font-size: 30px;
     }
